@@ -25,15 +25,25 @@ const App = () => {
     }
   ];
 
-
   //outside the return 
   const outside = founders.map((founder, i) => {
-    return <FounderListItem key={i} name={founder.name} title={founder.title} intro={founder.intro} />
+    // return <FounderListItem key={i} name={founder.name} title={founder.title} intro={founder.intro} />
+    //here is an example of the spread operator
+    return <FounderListItem key={i} {...founder} />
   });
+
+  const navItems = [
+    'Home',
+    'About Us',
+    'Investment Opportunities',
+    'Terms of Service',
+  ]
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        test={navItems}
+      />
       <main>
         <h1>Welcome to Hyperbo.ly</h1>
         <h2>The future is firmly in front of us!</h2>

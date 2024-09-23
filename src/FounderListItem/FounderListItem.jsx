@@ -1,6 +1,10 @@
 const FounderListItem = (props) => {
-    console.log(props)
-
+   
+    // const props =  {
+    //     name: "abc",
+    //     title: "cba",
+    //     intro: "MBA from SuperLegit University"
+    //   },
     return (
         <li>
             <h3>{props.name}: {props.title}</h3>
