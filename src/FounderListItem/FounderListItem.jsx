@@ -1,4 +1,6 @@
 const FounderListItem = (props) => {
+    console.log(props)
+
     return (
         <li>
             <h3>{props.name}: {props.title}</h3>
